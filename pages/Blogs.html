@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blogs - My Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #444444;
+      color: #fff;
+    }
+    header, footer {
+      width: 100%;
+      background: #ffffff;
+      padding: 1rem 20px;
+      box-sizing: border-box;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .logo img {
+      width: 200px;
+      height: auto;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+    /* Remove underline from blog tile links */
+    .blog-tile a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem 20px;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      margin-bottom: 2rem;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .blog-tile {
+      background: #2C2C2C;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .blog-tile:hover {
+      transform: translateY(-5px);
+    }
+    /* Fixed banner size: height set to 250px for all blog tiles */
+    .blog-banner {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+      background-color: #d3d3d3; /* Light grey background */
+    }
+    .blog-content {
+      padding: 1rem;
+    }
+    .blog-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #FFD700;
+    }
+    .blog-content p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+    footer {
+      text-align: center;
+      background: #f5f5f5;
+      color: #333;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Logo on Left and Navigation on Top Right -->
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../images/Icon.png" alt="Home Icon">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/About.html">About Me</a></li>
+        <li><a href="../pages/Blogs.html">Blogs</a></li>
+        <li><a href="../pages/Contact%20me.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h1>My Blogs</h1>
+    <div class="blog-grid">
+      <!-- Blog Tile for blogs1.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs1.html">
+          <img class="blog-banner" src="../images/International-day-of-persons-with-disabilities.png" alt="International Day Banner">
+          <div class="blog-content">
+            <h2>Celebrating International Day of Persons with Disabilities</h2>
+            <p>This post honors the strength of the disability community and emphasizes the need for awareness, accessibility, and inclusion.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Blog Tile for blogs2.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs2.html">
+          <img class="blog-banner" src="../images/diversity1.jpeg" alt="Diversity & Inclusion – Part 1">
+          <div class="blog-content">
+            <h2>Diversity & Inclusion – Part 1</h2>
+            <p>An engaging post discussing the importance of embracing diversity and breaking stereotypes to create a truly inclusive society.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Blog Tile for blogs3.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs3.html">
+          <img class="blog-banner" src="../images/diversity2.jpeg" alt="Diversity & Inclusion – Part 2">
+          <div class="blog-content">
+            <h2>Diversity & Inclusion – Part 2</h2>
+            <p>Exploring systemic challenges and practical approaches to build accessible environments for individuals with disabilities.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Blog Tile for blogs4.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs4.html">
+          <img class="blog-banner" src="../images/diversity3.jpeg" alt="Diversity & Inclusion – Part 3">
+          <div class="blog-content">
+            <h2>Diversity & Inclusion – Part 3</h2>
+            <p>A look into how inclusive practices can transform daily life and empower individuals to break through barriers.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Blog Tile for blogs5.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs5.html">
+          <img class="blog-banner" src="../images/diversity4.jpeg" alt="Diversity & Inclusion – Part 4">
+          <div class="blog-content">
+            <h2>Diversity & Inclusion – Part 4</h2>
+            <p>An exploration of the impact of inclusive leadership and how accessible technologies can empower every individual.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Blog Tile for blogs6.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs6.html">
+          <img class="blog-banner" src="../images/diversity5.jpeg" alt="Diversity & Inclusion – Part 5">
+          <div class="blog-content">
+            <h2>Diversity & Inclusion – Part 5</h2>
+            <p>Concluding our series, I reflect on the future of inclusive practices and the role of continuous learning in driving change.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Blog Tile for blogs7.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs7.html">
+          <img class="blog-banner" src="../images/diversity6.jpeg" alt="Raising Awareness on Disability">
+          <div class="blog-content">
+            <h2>Raising Awareness: Changing Perspectives on Disability</h2>
+            <p>A passionate call to transform societal views on disability and create a more inclusive community.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Blog Tile for blogs9.html -->
+      <div class="blog-tile">
+        <a href="../pages/blogs9.html">
+          <img class="blog-banner" src="../images/mentorship.png" alt="The Power of Mentorship">
+          <div class="blog-content">
+            <h2>The Power of Mentorship</h2>
+            <p>Insights on how mentorship has shaped my journey and its importance in guiding the next generation.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Shubham Garg. All rights reserved.</p>
+  </footer>
+</body>
+</html>

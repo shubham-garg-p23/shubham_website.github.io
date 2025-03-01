@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me – Shubham Garg</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #2C2C2C;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header, footer {
+      width: 100%;
+      background: #f0f0f0; /* Off white/light grey */
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      width: 200px;
+      height: auto;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      width: 95%;
+      margin: 20px auto;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    /* Intro Section */
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .intro .text {
+      flex: 1.5;
+      min-width: 300px;
+      margin: 10px;
+    }
+    .intro .image {
+      flex: 0.5;
+      min-width: 200px;
+      text-align: right;
+      margin: 10px;
+    }
+    .intro .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    /* Navigation Buttons */
+    .nav-buttons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .nav-buttons h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .nav-buttons a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    /* Internal Sections */
+    .section {
+      margin-bottom: 40px;
+      padding-top: 40px;
+    }
+    .section .section-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    /* Odd sections: text left, image right */
+    .section:nth-of-type(odd) .text {
+      flex: 1.5;
+      margin: 10px;
+      padding-right: 15px;
+    }
+    .section:nth-of-type(odd) .image {
+      flex: 0.5;
+      margin: 10px;
+      text-align: right;
+    }
+    /* Even sections: image left, text right */
+    .section:nth-of-type(even) .text {
+      flex: 1.5;
+      margin: 10px;
+      padding-left: 15px;
+    }
+    .section:nth-of-type(even) .image {
+      flex: 0.5;
+      margin: 10px;
+      text-align: left;
+    }
+    .section .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    /* Heading color classes for first word */
+    .alt1 {
+      color: #FFD700; /* Golden-yellow */
+    }
+    .altWhite {
+      color: #ffffff;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Logo and Navigation -->
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../images/Icon.png" alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/About.html">About Me</a></li>
+        <li><a href="../pages/Blogs.html">Blogs</a></li>
+        <li><a href="../pages/Contact me.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main Content Container -->
+  <div class="container">
+    
+    <!-- Shubham Garg Summary -->
+    <section class="intro">
+      <div class="text">
+        <h1>
+          <span class="alt1">Shubham</span>
+          <span class="altWhite">Garg</span>
+        </h1>
+        <p>
+          I am Shubham Garg—a passionate storyteller, fighter, and advocate for a more inclusive world. Born visually impaired, I have learned to transform every obstacle into an opportunity for growth. My journey, marked by academic excellence, international accolades, and real-world challenges, is a testament to perseverance and the relentless pursuit of excellence. I share my experiences to empower others, break stereotypes, and inspire a belief in the limitless potential within each of us.
+        </p>
+      </div>
+      <div class="image">
+        <img src="../images/p2.jpeg" alt="Shubham Garg">
+      </div>
+    </section>
+    
+    <!-- Navigation for Internal Sections -->
+    <section class="nav-buttons">
+      <h2>Know More About Me</h2>
+      <a href="#childhood">Childhood</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#professional">Professional Experience</a>
+      <a href="#vision">Vision &amp; Values</a>
+      <a href="#leadership">Leadership &amp; Community</a>
+      <a href="#testimonials">Testimonials &amp; Media</a>
+    </section>
+    
+    <!-- Childhood Section (Expanded) -->
+    <section class="section" id="childhood">
+      <div class="section-content">
+        <div class="text" style="width:100%;">
+          <h2><span class="alt1">Childhood</span></h2>
+          <p>
+            My childhood was a complex tapestry woven with both wonder and deep adversity. At just six years old, I faced a severe medical crisis—contracting a critical condition that nearly claimed my life. I vividly recall the excruciating pain, the relentless treatments, and the overwhelming fear as my body battled to heal. The experience left me encased in layers of bandages and subjected to daily, painful baths in potassium permanganate.
+          </p>
+          <p>
+            In those dark days, when doctors warned that I might not survive another day, the uncertainty of my future loomed large. Yet, amid the despair, my family’s unwavering love and support shone like a beacon. Their care, encouragement, and steadfast belief in my ability to overcome even the harshest challenges ignited a spark within me—a spark that has fueled my journey ever since.
+          </p>
+          <p>
+            The trials of my early years taught me to value resilience, to find hope in the smallest moments, and to understand that every setback is an opportunity to rise stronger. These formative experiences not only shaped my character but also instilled in me the determination to make a difference in the world.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Education Section (Expanded) -->
+    <section class="section" id="education">
+      <div class="section-content">
+        <div class="image">
+          <img src="../images/p3.jpeg" alt="Education">
+        </div>
+        <div class="text">
+          <h2><span class="alt1">Education</span></h2>
+          <p>
+            My academic journey is a testament to grit, passion, and relentless determination. In Class X, I achieved an impressive 9.6/10 CGPA, and in Class XII, I topped the commerce stream with an outstanding 94%, setting the stage for a future defined by excellence. Each academic milestone reaffirmed my belief that hard work and perseverance can shatter even the most daunting obstacles.
+          </p>
+          <p>
+            After clearing the CAT Examination, I received call-ups from all three top IIMs in India—IIM Ahmedabad, IIM Calcutta, and IIM Bangalore. Choosing to pursue my MBA at IIM Ahmedabad, I continue to develop robust leadership and strategic skills that will shape my future endeavors. My undergraduate studies at Keshav Mahavidyalaya, University of Delhi, laid the groundwork in commerce and business strategy, preparing me for the competitive world of business.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Achievements Section (Expanded) -->
+    <section class="section" id="achievements">
+      <div class="section-content">
+        <div class="text">
+          <h2><span class="alt1">Achievements</span></h2>
+          <p>
+            Every milestone in my life is not just a personal victory, but a powerful testament to overcoming adversity. I have been honored as an International Medallist by the Government of India, received the prestigious HCL Young Achievers Excellence Award, and earned a silver medal at the Global IT Challenge for Youth with Disabilities in Vietnam. These accolades are emblematic of countless hours of hard work, determination, and the courage to push beyond perceived limitations.
+          </p>
+          <p>
+            Beyond academic and athletic accolades, my professional experiences at renowned organizations such as Amazon, Cisco, and Sony Research India have further cemented my commitment to innovation and excellence. Each achievement, whether on a national or international stage, fuels my drive to inspire others and advocate for a world that recognizes potential over prejudice.
+          </p>
+        </div>
+        <div class="image">
+          <img src="../images/p5.jpeg" alt="Achievements">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Challenges Section (Expanded, Text Only) -->
+    <section class="section" id="challenges">
+      <div class="section-content">
+        <div class="text" style="width:100%;">
+          <h2><span class="alt1">Challenges</span></h2>
+          <p>
+            Living with visual impairment has presented a unique set of challenges that have tested my resolve and sparked my innovation. From grappling with an education system that wasn’t designed for accessibility to contending with widespread social stereotypes, each challenge has pushed me to find creative solutions—whether that means recording lectures, relying on assistive technology, or developing new study strategies.
+          </p>
+          <p>
+            Social interactions, too, have been fraught with misconceptions and unintentional biases. Questions about how I manage everyday tasks often remind me of the narrow expectations society holds for those with disabilities. Yet, every obstacle has deepened my empathy and strengthened my commitment to advocate for change, proving that with determination, even the most daunting challenges can be transformed into opportunities for growth.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Professional Experience Section (Expanded) -->
+    <section class="section" id="professional">
+      <div class="section-content">
+        <div class="text">
+          <h2><span class="alt1">Professional</span> Experience</h2>
+          <p>
+            My professional journey is as dynamic as it is diverse. I secured a Pre-Placement Offer at Amazon by conceptualizing innovative solutions that enhanced seller communication and transparency. At Cisco, I led critical process optimizations and spearheaded product innovations that streamlined operations and drove revenue growth. My internship at Sony Research India further broadened my perspective by exposing me to strategic policy reviews and transformative projects.
+          </p>
+          <p>
+            Each role has not only sharpened my technical and leadership skills but also reinforced my belief in the power of collaboration and innovation. My professional experiences are a reflection of my commitment to excellence and my relentless pursuit of growth in a challenging, fast-paced environment.
+          </p>
+        </div>
+        <div class="image">
+          <img src="../images/p4.jpeg" alt="Professional Experience">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Vision & Values Section (Expanded, Text Only) -->
+    <section class="section" id="vision">
+      <div class="section-content">
+        <div class="text" style="width:100%;">
+          <h2><span class="alt1">Vision</span> &amp; Values</h2>
+          <p>
+            At the core of my journey is a simple yet powerful belief: every individual possesses the strength to overcome limitations and transform adversity into opportunity. I envision a world where diversity is celebrated and where every person, regardless of their challenges, is empowered to achieve greatness. My guiding values—integrity, resilience, and empathy—inform every decision I make and inspire me to lead by example.
+          </p>
+          <p>
+            I am committed to challenging societal stereotypes and fostering an environment of inclusion, where every voice is heard and every talent is nurtured. My vision is not just about personal success; it is about uplifting others, breaking down barriers, and creating a legacy of positive change.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Leadership & Community Section (Expanded, Text Only) -->
+    <section class="section" id="leadership">
+      <div class="section-content">
+        <div class="text" style="width:100%;">
+          <h2><span class="alt1">Leadership</span> &amp; Community</h2>
+          <p>
+            Leadership, for me, is about inspiring change and nurturing growth in others. From my early days as Head Boy in school—where I learned the importance of responsibility and empathy—to speaking at national forums as a motivational speaker, my journey has been defined by a commitment to service. I actively engage in initiatives that promote diversity, inclusion, and equal opportunity, working with community organizations and educational institutions to drive meaningful change.
+          </p>
+          <p>
+            By mentoring peers and collaborating on projects that empower individuals with disabilities, I strive to create a legacy of leadership that transcends personal achievement and contributes to the greater good.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials & Media Section (Expanded, Text Only) -->
+    <section class="section" id="testimonials">
+      <div class="section-content">
+        <div class="text" style="width:100%;">
+          <h2><span class="alt1">Testimonials</span> &amp; Media</h2>
+          <p>
+            Over the years, my journey has resonated with a diverse range of audiences—from industry leaders to young aspiring students. Through seminars, panel discussions, and media interviews, I have shared my story of resilience and transformation. The heartfelt testimonials I have received speak to the impact of my experiences, reinforcing my belief that our struggles can inspire others.
+          </p>
+          <p>
+            These endorsements, along with numerous media features, serve as a powerful reminder that every challenge overcome can light the way for others. They inspire me to continue advocating for a world where every individual’s potential is recognized and celebrated.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shubham Garg. All rights reserved.</p>
+  </footer>
+</body>
+</html>
