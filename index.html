@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - My Professional Website</title>
+  <!-- Elegant font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global styles & Flex layout for sticky footer */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #2C2C2C; /* Sandy black background */
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Header styling - now off white/light grey */
+    header {
+      background: #f0f0f0; /* Off white/light grey */
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      width: 200px;
+      height: auto;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      font-weight: bold;
+      color: #333;
+    }
+    /* Main container styling */
+    .container {
+      flex: 1;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      background-color: #2C2C2C;
+    }
+    /* Section styling with spacing and off-white separator */
+    .section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #f8f8f8;
+    }
+    /* Section 1: Two-column layout with image left, text right */
+    .section-1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section-1 .image-container {
+      flex: 1;
+      min-width: 200px;
+    }
+    .section-1 .image-container img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .section-1 .content {
+      flex: 2;
+      min-width: 200px;
+    }
+    /* Section 2: Two-column layout with text on left, image on right */
+    .section-2 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      text-align: left;
+    }
+    .section-2 .content {
+      flex: 2;
+      min-width: 200px;
+    }
+    .section-2 .image-container {
+      flex: 1;
+      min-width: 200px;
+    }
+    .section-2 .image-container img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    /* Section 3: Center-aligned */
+    .section-3 {
+      text-align: center;
+    }
+    /* Increase heading sizes */
+    .container h1 { font-size: 3rem; }
+    .container h2 { font-size: 2.5rem; }
+    .container h3 { font-size: 2rem; }
+    .container h4 { font-size: 1.75rem; }
+    .container h5 { font-size: 1.5rem; }
+    .container h6 { font-size: 1.25rem; }
+    /* Elegant headings with rolled edges */
+    .container h1,
+    .container h2,
+    .container h3,
+    .container h4,
+    .container h5,
+    .container h6 {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    /* Classes for heading text coloring */
+    .alt1 {
+      color: #FFD700 !important; /* golden-yellow */
+    }
+    .altWhite {
+      color: #ffffff !important;
+    }
+    .container p {
+      color: #f0f0f0;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    /* Default Button styling */
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #007BFF;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      text-decoration: none;
+    }
+    /* Learn More button override: White background with dark grey text (no border) */
+    .btn-learnmore {
+      background-color: #ffffff;
+      color: #333333;
+      border: none;
+    }
+    /* Social links styling */
+    .social-links a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 0.5rem;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+    .social-links a:hover {
+      filter: grayscale(0%);
+    }
+    .social-links img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    /* Footer styling */
+    footer {
+      background: #f5f5f5;
+      color: #333;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Icon.png" alt="Home Icon">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/About.html">About Me</a></li>
+        <li><a href="pages/Blogs.html">Blogs</a></li>
+        <li><a href="pages/Contact%20me.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main Content Area -->
+  <div class="container">
+    <!-- Section 1: Welcome (Image left, text right) -->
+    <div class="section section-1">
+      <div class="image-container">
+        <img src="images/Photo%20red%20bricks.JPG" alt="Shubham Garg">
+      </div>
+      <div class="content">
+        <h1>
+          <span class="alt1">Hi,</span> 
+          <span class="altWhite">I'm Shubham Garg</span>
+        </h1>
+        <p>Welcome to my website! My name is Shubham Garg, and I believe in transforming challenges into opportunities. Through my experiences as a motivational speaker and a dedicated disability activist, I share a wealth of insights drawn from overcoming adversity and embracing resilience.</p>
+        <p>This platform offers a comprehensive look into my journey—a narrative that blends practical advice with heartfelt stories. I discuss the lessons learned along the way and offer inspiration for those striving for growth and empowerment.</p>
+        <p>As a visually impaired individual and a proud student at the Indian Institute of Management Ahmedabad, I am committed to breaking barriers and promoting inclusion. Join me as I continue to learn, overcome challenges, and make a meaningful impact in the world.</p>
+      </div>
+    </div>
+    <!-- Section 2: Glimpse in My Life (Text left, image on right) -->
+    <div class="section section-2">
+      <div class="content">
+        <h2>
+          <span class="alt1">A</span>
+          <span class="altWhite">Small Glimpse in My Life</span>
+        </h2>
+        <p>Explore a vivid snapshot of my journey—a window into the myriad milestones, challenges, and achievements that have defined who I am today. From overcoming early adversities to celebrating significant academic and professional triumphs, each experience has sculpted my character and ignited my passion for innovation. My journey is a tapestry woven with moments of resilience, creativity, and unwavering determination. Whether navigating the complexities of a visually impaired world or breaking barriers in competitive environments, I have continuously transformed obstacles into opportunities for growth. This glimpse into my life not only highlights my commitment to excellence but also reflects the drive that fuels my ambition to inspire and empower others to realize their full potential.</p>
+        <a href="pages/About.html" class="btn btn-learnmore">Learn More About Me</a>
+      </div>
+      <div class="image-container">
+        <img src="images/IMG-20240303-WA0007.jpg" alt="Glimpse in My Life">
+      </div>
+    </div>
+    <!-- Section 3: Social Links (Center-aligned with icon buttons) -->
+    <div class="section section-3">
+      <h2>
+        <span class="alt1">Join</span>
+        <span class="altWhite">Me on My Journey</span>
+      </h2>
+      <p>Connect with me on social media to stay updated on my latest insights, events, and motivational messages. Your support inspires me to keep pushing boundaries and share innovative ideas.</p>
+      <p>Follow me for regular updates, exclusive behind-the-scenes content, and thought-provoking perspectives designed to empower and motivate. If you are interested in organizing a motivational session, event, or counseling session, please feel free to contact me. I am passionate about sharing my experiences and providing guidance to help individuals overcome challenges and unlock their full potential.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/shubhamgarg976/?hl=en" target="_blank">
+          <img src="images/instagram_icon.webp" alt="Instagram">
+        </a>
+        <a href="https://in.linkedin.com/in/gargshubham07" target="_blank">
+          <img src="images/linkedin_icon.webp" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shubham Garg. All rights reserved.</p>
+  </footer>
+</body>
+</html>
